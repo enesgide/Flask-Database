@@ -1,0 +1,19 @@
+{% include 'top.html' %}
+<div id="content">
+    <h1 class="page-title">Academic Staff Count by Department</h1>
+    <table class="pure-table">
+        <thead>
+            <tr><th>Department</th><th>Number of Staff</th></tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+                    <tr>
+						<td> {{result[0]}}</td>
+                        <td> {{result[1]}} </td>
+                    </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

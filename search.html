@@ -1,0 +1,19 @@
+{% include 'top.html' %}
+<html>
+<body>
+<div id="content">
+    <h1 class="page-title">Department Search</h1>
+        <!--
+            Simple login form, the thing you want to pay attention to is
+            the method and the action, it shows you what's happening
+        -->
+
+        <form class="pure-form pure-form-stacked login" method="POST" action="{{ url_for('search_department') }}">
+            <h2></h2>
+            <h4>Enter a valid department id below</h4>
+            <input type="text" name="dptid" placeholder="Department Id" required>
+            <input class="pure-button pure-button-primary" type="submit">
+        </form>
+</div>
+</body>
+</html>
